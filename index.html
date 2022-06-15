@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<form id="survey-form">
+ <h1 id="title"> Survey Form </h1>
+  <p id="description"> This survey intends to gather consumers' opinions on various brands of face wash.</P>
+</header>
+
+<main>
+  <form id = "survey-form">
+      <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required
+             />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required
+             />
+    </div>
+
+  <div class="form-group">
+        <label id="number-label"        for="number">Age<span class="optional">(optional) </span></label>
+      <input
+             type="number"
+             name="age"
+             id="number"
+             min="0"
+             max="100"
+             class="form-control"
+             placeholder="Age"/>
+  </div>
+
+     <div class="form-group">
+      <p>Which best describes your skin type?</p>
+      <select
+              id="dropdown"
+              name="role"
+              class="form-control"
+              required>
+      <option disabled selected value>Select skin type</option>
+      <option value="dry">dry</option>
+      <option value="dry">a little dry</option>
+      <option value="oily">a little oily Marketing</option>
+      <option value="oily">oily</option>
+        <option value="combination">combination</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you pay more for sustainable or vegan face wash?</p>
+      <label>
+        <input
+               name="pay more?"
+               value="Very likely"
+               type="radio"
+               class="input-radio"/>Very likely</label>
+
+      <label>
+        <input
+               name="pay more?"
+               value="likely"
+               type="radio"
+               class="input-radio"/>Likely</label>
+
+      <label>
+        <input
+               name="pay more?"
+               value="not-sure"
+               type="radio"
+               class="input-radio"/>Not sure</label>
+
+      <label>
+        <input
+               name="pay more?"
+               value="unlikely"
+               type="radio"
+               class="input-radio"/>Unikely</label>
+
+      <label>
+        <input
+               name="pay more?"
+               value="very unlikely"
+               type="radio"
+               class="input-radio"/>Very unlikely</label>
+    </div>
+
+      <div class="form-group">
+        <p>What do you look for in a face wash?</p>
+        <select
+                id="facewash quality"
+                name="facewash quality"
+                class="form-control"
+                required>
+          <option disabled selected value>Select an option</option>
+          <option value="price">Price</option>
+          <option value="moisturize">Moisturize</option>
+          <option value="ingredient">Ingredients</option>
+          <option value="sustainability">Sustainability</option>
+          <option value="acne">Helps with acne</option>
+          </select>
+    </div>
+
+
+    <div class="form-group">
+      <p>What would you like to see improved?<span class="optional">(Check all that apply)</span>
+      </p>
+
+      <label>
+        <input
+               name="improve"
+               value="Cost"
+               type="checkbox"
+               class="input-checkbox"/>Cost</label>
+
+      <label>
+        <input
+               name="improve"
+               value="Packaging Design"
+               type="checkbox"
+               class="input-checkbox"/>Design
+        </label>
+
+      <label>
+        <input
+               name="improve"
+               value="Ingredient Lable"
+               type="checkbox"
+               class="input-checkbox"/>logo
+        </label>
+
+      <label>
+        <input
+               name="improve"
+               value="Sustainability"
+               type="checkbox"
+               class="input-checkbox"/>Price
+        </label>
+
+      <label>
+        <input
+               name="improve"
+               value="Texture"
+               type="checkbox"
+               class="input-checkbox"/>Website
+        </label>
+
+      <label>
+        <input
+               name="improve"
+               value="Recycling Service"
+               type="checkbox"
+               class="input-checkbox"/>Service
+        </label>
+
+      <label>
+        <input
+               name="improve"
+               value="Website"
+               type="checkbox"
+               class="input-checkbox"/>Website</label>
+    </div>
+
+    <div class="form-group">
+      <p>What is your favourite face wash brand?</p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your favourite face wash brand here"></textarea>
+    </div>
+
+
+    <div class="form-group">
+      <button
+              type="submit"
+              id="submit"
+              class="submit-button">Submit</button>
+    </div>
+
+
+  </form>
+    </div>
+ </body>
+ </html>
